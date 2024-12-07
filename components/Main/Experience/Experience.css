@@ -1,0 +1,41 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+}
+
+#experience > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#experience > div > div {
+  height: auto;
+  width: 50%;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#experience > div > div:hover {
+  background-color: var(--hover-color-light);
+}
+
+body.dark-mode #experience > div > div:hover {
+  background-color: var(--hover-color-dark);
+}
+
+@media screen and (max-width: 768px) {
+  #experience > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #experience > div > div {
+    height: auto;
+    width: auto;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 20px;
+  }
+}

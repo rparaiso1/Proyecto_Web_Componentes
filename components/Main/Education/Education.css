@@ -1,0 +1,16 @@
+#education {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+#education div {
+  padding: 2px;
+  cursor: pointer;
+}
+
+#education div:hover {
+  transform: scale(1.1);
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

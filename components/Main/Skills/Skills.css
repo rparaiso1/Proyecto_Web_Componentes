@@ -1,0 +1,20 @@
+#skills {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+#skills > li {
+  border: var(--border-light);
+  border-radius: 25px;
+  padding: 10px;
+  height: auto;
+}
+
+body.dark-mode #skills li {
+  border: var(--border-dark);
+}

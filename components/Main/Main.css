@@ -1,0 +1,17 @@
+main {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: var(--border-light);
+  margin-top: 20px;
+}
+
+body.dark-mode main {
+  border: var(--border-dark);
+}
+
+main > section {
+  margin: 20px;
+}

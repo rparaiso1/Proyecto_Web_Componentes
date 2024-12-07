@@ -1,0 +1,15 @@
+#aboutMe {
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#aboutMe p {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
+}

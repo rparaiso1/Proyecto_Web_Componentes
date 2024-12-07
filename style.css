@@ -1,0 +1,102 @@
+:root {
+  --header-dark: #cfcaca7c;
+  --header-light: #82808083;
+  --h2-dark: #5c5b5b7c;
+  --h2-light: #d9d6d67e;
+  --h2-text-dark: #ffffff;
+  --primary-color-light: #fefefe;
+  --primary-color-dark: #000000;
+  --text-color-light: #212020;
+  --text-color-dark: #f6f4f4;
+  --border-dark: 2px solid #ffffff;
+  --border-light: 2px solid #000000;
+  --hover-color-light: rgba(0, 0, 0, 0.15);
+  --hover-color-dark: rgba(237, 237, 237, 0.264);
+  --dot-size: 4px;
+  --dot-color-light: rgba(0, 0, 0, 0.2);
+  --dot-color-dark: rgba(255, 255, 255, 0.2);
+  --background-color-light: #ffffff;
+  --background-color-dark: #000000;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color-light);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: var(--background-color-light);
+  background-image: radial-gradient(
+    var(--dot-color-light) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  transition: background-color 0.5s ease, background-image 0.5s ease;
+}
+
+body.dark-mode {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+  background-image: radial-gradient(var(--dot-color-dark) 1px, transparent 1px);
+}
+
+button {
+  background-color: var(--button-bg-color-light);
+  color: var(--button-text-color-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode button {
+  background-color: var(--button-bg-color-dark);
+  color: var(--button-text-color-dark);
+}
+
+button:hover {
+  background-color: var(--hover-color-light);
+}
+
+body.dark-mode button:hover {
+  background-color: var(--hover-color-dark);
+}
+
+h2 {
+  background-color: var(--h2-light);
+  border: var(--border-light);
+  padding: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode h2 {
+  background-color: var(--h2-dark);
+  border: var(--border-dark);
+}
+
+h2:hover {
+  background-color: var(--hover-color-light);
+}
+
+body.dark-mode h2:hover {
+  background-color: var(--hover-color-dark);
+}
+
+a {
+  color: var(--text-color-light);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode a {
+  color: var(--text-color-dark);
+}
+
+li:hover {
+  background-color: var(--hover-color-light);
+}
+
+body.dark-mode li:hover {
+  background-color: var(--hover-color-dark);
+}

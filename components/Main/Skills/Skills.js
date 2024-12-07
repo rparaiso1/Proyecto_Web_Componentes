@@ -1,4 +1,4 @@
-import "./skills.css"
+import "./Skills.css"
 import mainData from "../../../data/MainData";
 const { skills } = mainData; 
 

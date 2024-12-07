@@ -4,7 +4,7 @@ const { experience } = mainData;
 
 const Experience = () => {
   return `
-        <h2>💻 Esperience</h2>
+        <h2>💻 Experience</h2>
         ${experience
           .map(
             (Experience) => `

@@ -4,14 +4,15 @@ const { languages, contact } = mainData;
 
 const Languages = () => {
   return `
-        <h2>🌍 Languajes: </h2> 
+  <h2>🌍 Languajes: </h2> 
+  <div>
     ${languages
       .map(
         (Languages) => `
-        <p>${Languages.language}</p>`
-      )
-      .join("")}
-    `;
+    <p>${Languages.language}</p>`
+      ).join("")}
+    </div>
+      `;
 };
 
 const Contact = () => {
